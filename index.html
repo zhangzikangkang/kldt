@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet/less" href="css/index.less"/>
+    <link rel="stylesheet" href="css/base.css"/>
+    <script src="js/less.min.js"></script>
+    <!--滚动字幕-->
+    <script src="js/jquery.js"></script>
+    <!--下拉显示隐藏-->
+    <script src="js/common.js"></script>
+    <script src="js/superslide.2.1.js"></script>
+    <style>
+        .fullSlide{width:100%;position:relative;height:500px; margin:0 auto;}
+        .fullSlide .bd{margin:0 auto;position:relative;z-index:0;overflow:hidden;}
+        .fullSlide .bd ul{width:100% !important;}
+        .fullSlide .bd li{width:100% !important;height:500px;overflow:hidden;text-align:center; margin: 0 auto; position: relative}
+        .fullSlide .bd li img{margin: 0 auto;}
+        .fullSlide .bd li a{display:block;height:500px;}
+        .fullSlide .hd{width:100%;position:absolute;z-index:1;bottom:0;left:0;height:0;line-height:30px;}
+        .fullSlide .hd ul{text-align:center; margin-top:-40px;}
+        .fullSlide .hd ul li{cursor:pointer;display:inline-block;*display:inline;zoom:1;width:30px;height:6px;margin-right:27px;overflow:hidden;background:#fff;filter:alpha(opacity=50);opacity:0.4;line-height:999px;}
+        .fullSlide .hd ul .on{background:#000;}
+        .fullSlide img{
+            position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%);
+        }
+    </style>
+
+</head>
+<body>
+<!--头部导航开始-->
+<header>
+    <div class="logo">
+        <img src="img/logo.jpg">
+    </div>
+    <nav>
+        <ul class="clearfix">
+            <li><a href="index.html" class="active">首页</a></li>
+            <li><a href="shopping.html">衬衫</a></li>
+            <li><a href="#">卫衣</a></li>
+            <li><a href="#">裤子</a></li>
+            <li><a href="#">联系我们</a></li>
+        </ul>
+    </nav>
+</header>
+<!--头部导航结束-->
+
+<!--banner开始-->
+<div class="fullSlide">
+    <div class="bd">
+        <ul>
+            <li style="background:center 0 no-repeat;">
+                <img src="img/banner_1.jpg"  />
+                <a href="#"></a>
+            </li>
+            <li style="background:center 0 no-repeat;">
+                <img src="img/banner_2.jpg"  />
+                <a href="#"></a>
+            </li>
+            <li style="background:center 0 no-repeat;">
+                <img src="img/banner_3.jpg"  />
+                <a href="#"></a>
+            </li>
+            <li style="background:center 0 no-repeat;">
+                <img src="img/banner_4.jpg" />
+                <a href="#"></a>
+            </li>
+            <li style="background:center 0 no-repeat;">
+                <img src="img/banner_5.jpg" />
+                <a href="#"></a>
+            </li>
+
+        </ul>
+    </div>
+    <div class="hd"><ul></ul></div>
+    <span class="prev"></span>
+    <span class="next"></span>
+</div><!--fullSlide end-->
+
+<!--banner结束-->
+
+<!--主体内容开始-->
+<div class="content clearfix">
+    <aside>
+        <h2>Jane Shopping</h2>
+        <div class="trends">
+            <h3>最新动态 <p class="downUp"><img src="img/up.jpg"></p></h3>
+            <div class="roll_text">
+                <ul>
+                    <li><a href="#" class="tooltip" title="修身韩版小西装万人疯抢.">修身韩版小西装万人疯抢.</a></li>
+                    <li><a href="#" class="tooltip" title="夏末雪纺店主含泪大甩卖.">夏末雪纺店主含泪大甩卖.</a></li>
+                    <li><a href="#" class="tooltip" title="瑞丽都疯狂推荐的秋装.">瑞丽都疯狂推荐的秋装.</a></li>
+                    <li><a href="#" class="tooltip" title="48元长款针织小开衫卖疯啦.">48元长款针织小开衫卖疯啦.</a></li>
+                    <li><a href="#" class="tooltip" title="长袖雪纺衫单穿内搭都超美.">长袖雪纺衫单穿内搭都超美.</a></li>
+                    <li><a href="#" class="tooltip" title="甜美宽松毛衣今秋一定红.">甜美宽松毛衣今秋一定红.</a></li>
+                    <li><a href="#" class="tooltip" title="修身韩版小西装万人疯抢.">秋装百搭小马甲不到50元.</a></li>
+                </ul>
+            </div>
+            <h3>产品分类<p class="downUp"><img src="img/up.jpg"></p> </h3>
+            <div class="trend_clo">
+                <ul>
+                    <li>
+                        <h4>衬衫<p class="downUp"><img src="img/up.jpg"></p></h4>
+                        <div>
+                            <a href="#">短袖衬衫</a><br>
+                            <a href="#">长袖衬衫</a>
+                        </div>
+                    </li>
+                    <li>
+                        <h4>卫衣<p class="downUp"><img src="img/up.jpg"></p></h4>
+                        <div>
+                            <a href="#">开襟卫衣</a><br>
+                            <a href="#">套头卫衣</a>
+                        </div>
+                    </li>
+                    <li>
+                        <h4>裤子<p class="downUp"><img src="img/up.jpg"></p></h4>
+                        <div>
+                            <a href="#">休闲裤</a><br>
+                            <a href="#">免烫卡其裤</a><br>
+                            <a href="#">牛仔裤</a><br>
+                            <a href="#">短裤</a>
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </aside>
+    <section class="sec1">
+        <h2  data-text="新品上市">NEW STYLE</h2>
+        <div class="new_style">
+            <img src="img/content_03.jpg">
+            <div class="mew_style_float">
+                <div>
+                    <h3>免烫高支棉衬衣</h3>
+                    <p>￥129<span>.00</span></p>
+                    <a href="#">立即抢购</a>
+                    <a href="#">查看更多></a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+</div>
+<div class="more_style">
+    <ul class="clearfix">
+        <li>
+            <img src="images/kz1.jpg">
+            <p>修身易熨衬衫<br>￥149.00</p>
+        </li>
+        <li>
+            <img src="images/kz2.jpg">
+            <p>修身易熨衬衫<br>￥239.00</p>
+        </li>
+        <li>
+            <img src="images/kz3.jpg">
+            <p>修身易熨衬衫<br>￥109.00</p>
+        </li>
+    </ul>
+</div>
+<!--主体内容结束-->
+
+<!--footer开始-->
+<footer>
+    <div class="web_footer">
+        <a href="#" class="">JANESHOPPING更多新款，点击查看</a>
+        <ul class="clearfix">
+            <li>
+                <h4>购物指南</h4>
+                <p><a href="#">网上购买</a><a href="#">订单追踪</a><a href="#">如何成为VIP</a></p>
+            </li>
+            <li>
+                <h4>探索</h4>
+                <p><a href="#">牛仔裤休闲系列</a><a href="#">内衣系列</a><a href="#">配件系列</a><a href="#">休闲运动系列</a></p>
+            </li>
+            <li>
+                <h4>关于我们</h4>
+                <p><a href="#">关于janeshoping</a><a href="#">门店地址</a><a href="#">网上购物</a></p>
+            </li>
+            <li>
+                <h4>联系我们</h4>
+                <p><a href="#">在线客服</a><a href="#">向我们发送Email</a></p>
+            </li>
+            <li>
+                <h4></h4>
+                <p>输入您的电子邮箱<br>
+                    获取juneshopping最新内容<br>
+                    <input type="text" value="请输入email地址">
+                </p>
+            </li>
+        </ul>
+        <p><span>彭卫绮商业（上海）有限公司 泸ICP备51830号</span><span>泸安公安备031924801号</span><span>隐私政策  条款声明</span></p>
+    </div>
+</footer>
+<!--footer结束-->
+<script type="text/javascript">
+    $(".fullSlide").hover(function(){
+                $(this).find(".prev,.next").stop(true, true).fadeTo("show", 0.5)
+            },
+            function(){
+                $(this).find(".prev,.next").fadeOut()
+            });
+    $(".fullSlide").slide({
+        titCell: ".hd ul",
+        mainCell: ".bd ul",
+        effect: "fold",
+        autoPlay: true,
+        autoPage: true,
+        trigger: "click",
+        startFun: function(i) {
+            var curLi = jQuery(".fullSlide .bd li").eq(i);
+            if ( !! curLi.attr("_src")) {
+                curLi.css("background-image", curLi.attr("_src")).removeAttr("_src")
+            }
+        }
+    });
+</script>
+</body>
+</html>
